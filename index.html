@@ -41,7 +41,7 @@
         async function getStudentList() {
             let studentData;
             try {
-                let studentFetch = await fetch("https://zenstudents.herokuapp.com/students/");
+                let studentFetch = await fetch("https://zenstudents.herokuapp.com/students");
                 studentData = await studentFetch.json();
             }
             catch (err) {
